@@ -17,7 +17,7 @@ def gg(name):
     gauth.SaveCredentialsFile("mycreds1.txt")
 
     drive = GoogleDrive(gauth)
-    path = (f"D:/Mini-project(V sem)/Amazon_product_review_system/.idea/{name}.csv")
+    path = (f"D:/Mini-project(V sem)/Amazon_product_review_system/.idea/{name}.csv") #Change to your system path where csv file is stored
     print('Started!!')
     file_list = drive.ListFile({'q': "'1zH0L2gDTC9tZTdrz49j3BmtgnAe0M9QW' in parents and trashed=False"}).GetList()
     f = drive.CreateFile({'title': f"{name}", 'parents': [{'id': '1zH0L2gDTC9tZTdrz49j3BmtgnAe0M9QW'}]})
