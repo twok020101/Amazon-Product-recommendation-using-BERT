@@ -47,10 +47,7 @@ class collector(object):
 
 
 
-if __name__ == '__main__':
-    t=collector()
-    t.collect("https://www.amazon.in/ASGARD-Certified-Fabric-Protective-PACKAGING/dp/B08B1W5QN5/ref=zg_bs_boost_1?_"
-              "encoding=UTF8&psc=1&refRID=H0V625YCN1VGPAR8YZEC")
+
 
 
 
