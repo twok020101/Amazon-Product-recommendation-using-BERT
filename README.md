@@ -8,6 +8,7 @@
   3. pandas-- pip install pandas
   4. google-- pip install google
   
+ -> Change location in gdrive file to your local file location
  -> Run colab before execution of other files.
  
  -> BERT code refered from Google Bert Repository.
