@@ -5,12 +5,14 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 def mail(email,product_name):
+    send_email=input("Enter sender email: ")
+    send_password=input("Sender email password(Dont worry it is not stored anywhere): ")
     subject = "Product Recommendation"
     body = "Requested product list is attached below in csv format." \
            "Thank You!"
-    sender_email = "projett68@gmail.com"
+    sender_email = send_mail
     receiver_email = email
-    password = "Poopooweewee"
+    password = send_password
 
     # Create a multipart message and set headers
     message = MIMEMultipart()
