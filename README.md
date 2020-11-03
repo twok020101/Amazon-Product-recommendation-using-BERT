@@ -9,3 +9,6 @@
   4. google-- pip install google
   
  -> Run colab before execution of other files.
+ 
+ -> BERT code refered from Google Bert Repository.
+    https://github.com/google-research/bert/blob/master/predicting_movie_reviews_with_bert_on_tf_hub.ipynb
