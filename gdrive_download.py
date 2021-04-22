@@ -18,8 +18,8 @@ def gg(name):
 
     drive = GoogleDrive(gauth)
     print('Started!!')
-    file_list = drive.ListFile({'q': "'1zH0L2gDTC9tZTdrz49j3BmtgnAe0M9QW' in parents and trashed=False"}).GetList()
-    f = drive.CreateFile({'title': f"{name}_final.csv", 'parents': [{'id': '1zH0L2gDTC9tZTdrz49j3BmtgnAe0M9QW'}]}) #change to your drive id
+    file_list = drive.ListFile({'q': "'YOUR API KEY' in parents and trashed=False"}).GetList()
+    f = drive.CreateFile({'title': f"{name}_final.csv", 'parents': [{'id': 'YOUR API KEY'}]}) #change to your drive id
     file_name = f['title']
     print('File name read....\n')
 
