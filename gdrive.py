@@ -19,8 +19,8 @@ def gg(name):
     drive = GoogleDrive(gauth)
     path = (f"D:/Mini-project(V sem)/Amazon_product_review_system/.idea/{name}.csv") #Change to your system path where csv file is stored
     print('Started!!')
-    file_list = drive.ListFile({'q': "'1zH0L2gDTC9tZTdrz49j3BmtgnAe0M9QW' in parents and trashed=False"}).GetList()
-    f = drive.CreateFile({'title': f"{name}", 'parents': [{'id': '1zH0L2gDTC9tZTdrz49j3BmtgnAe0M9QW'}]}) #id of your drive folder
+    file_list = drive.ListFile({'q': "'YOUR API KEY' in parents and trashed=False"}).GetList()
+    f = drive.CreateFile({'title': f"{name}", 'parents': [{'id': 'YOUR API KEY'}]}) #id of your drive folder
     file_name = f['title']
     print('File name read....\n')
 
